@@ -1,0 +1,16 @@
+#borderContainer {
+    width: 75%;
+    height: 75%;
+}
+img{
+    height: 30px;
+}
+.songTrPapayaWhip {
+    background-color: #FFEFD5;
+}
+.songTrPowderBlue  {
+    background-color: #B0E0E6;
+}
+.deleteImg{
+    height: 20px;
+}
