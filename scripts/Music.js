@@ -69,6 +69,7 @@ require(["dojo/ready",
 		 * @returns {undefined}
 		 */
 		this.addMusic = function () {
+			registry.byId("addMusicButton").disabled = true;
 			ioIframe.send({
 				form: "addMusicForm",
 				handleAs: "json"
@@ -76,6 +77,7 @@ require(["dojo/ready",
 				msg.set("content", response);
 				msg.show();
 				if (response === "新增音樂成功") {
+					registry.byId("addMusicButton").disabled = false;
 					registry.byId("addMusicDialog").hide();
 					self.musicGridRefresh();
 				}

@@ -6,7 +6,7 @@
 		</fieldset>
     </form>
     <div class="dijitDialogPaneActionBar" style="align: right">
-        <button data-dojo-type="dijit.form.Button" onclick="music.addMusic()">上傳</button>
+        <button id="addMusicButton" data-dojo-type="dijit.form.Button" onclick="music.addMusic()">上傳</button>
         <button data-dojo-type="dijit.form.Button" onclick="dijit.byId('addMusicDialog').hide();">取消</button>
     </div>
 </div>
