@@ -20,6 +20,8 @@ class MusicView extends View {
 		$this->tpl->assign("showPlayListUrl", "index.php?action=ShowPlayListAction");
 
 		$this->tpl->assign("addMusicToNewPlayListUrl", "index.php?action=AddMusicToNewPlayList");
+		
+		$this->tpl->assign("loadingImgPath","./images/loading.gif");
 	}
 
 	public function showMusicIndexPage() {

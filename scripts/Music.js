@@ -70,10 +70,12 @@ require(["dojo/ready",
 		 */
 		this.addMusic = function () {
 			registry.byId("addMusicButton").disabled = true;
+			registry.byId("loadingDialog").show();
 			ioIframe.send({
 				form: "addMusicForm",
 				handleAs: "json"
 			}).then(function (response) {
+				registry.byId("loadingDialog").hide();
 				msg.set("content", response);
 				msg.show();
 				if (response === "新增音樂成功") {
