@@ -10,7 +10,7 @@ class MusicModel extends Model {
 	}
 
 	public function getMusicArray($start = 0, $count = 25) {
-		$sql = "SELECT * FROM `music` LIMIT $start, $count";
+		$sql = "SELECT * FROM `music` ORDER BY `addtime` DESC LIMIT $start, $count ";
 		return $this->conn->query($sql);
 	}
 
